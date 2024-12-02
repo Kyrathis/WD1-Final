@@ -1,0 +1,105 @@
+/* 
+col 1: 001F3F
+col 2: 3A6D8C
+col 3: 6A9AB0
+col 4: EAD8B1
+*/
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Quicksand:wght@300..700&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+* {
+    background: #EAD8B1;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+.headcont{
+    display: flex;
+    justify-content: space-between;
+    background-color: #001F3F;
+} 
+
+.headcont .logo, .headcont #navbar {
+    background: #001F3F;
+    color: white;
+}
+#navbar li {
+    list-style-type: none;
+    float: left;
+    padding: 4px;
+    margin: 5px;
+    height: 25px;
+}
+#navbar li a {
+    color: white;
+}
+#navbar li:hover {
+    background: #6A9AB0;
+}
+#navbar a:hover {
+    background: #6A9AB0;
+    border-bottom: 2px solid #6A9AB0;
+}
+#navbar ul > * {
+    background-color: #001F3F;
+    list-style-type: none;
+}
+#navbar li > * {
+    background-color: #001F3F;
+}
+
+.vidLandCont {
+    display: flex;
+    justify-content: space-between;
+    background: #6A9AB0;
+}
+
+.introStatement {
+    margin: auto;
+    text-align: center;
+    background: #6A9AB0;
+}
+.introStatement, h3, p {
+    background: inherit;
+    color: white;
+}
+.heroVid {
+    width: 90vh;
+    height: auto;
+}
+
+.imageGallery {
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    border-radius: 5%;
+}
+.footCont
+{
+    background: #001F3F;
+    text-align: center;
+}
+
+.bio , .name{
+    background: #6A9AB0;
+    text-align: center;
+    color: white; 
+}
+.bio .name {
+    margin-top: 5%;
+}
+
+.bioCont {
+    display: flex;
+}
+
+.bioPic {
+    background: #6A9AB0;
+}
+
+.bioPic img{
+
+    width: 300px;
+    border-radius: 100%;
+}
