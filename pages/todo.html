@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/todo.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Portfolio | Todo List</title>
+</head>
+<body>
+    <script src="/js/todolist.js"></script>
+
+    <h1>This page is unlisted. It's a simple project that is not fully functional.</h1><hr>
+
+
+    <header class="bgSuccess">
+        <div class="formatting">
+            <strong><p>ToDo List</p></strong>
+        </div>
+
+    </header>
+
+<div class="formatting">
+    <div class="container">
+        <h2>Add Items</h2>
+
+        <label id="lblSuccess" class="textSuccess"></label>
+        <form id="addForm">
+            <input type="text" onkeyup="toggleButton(this, 'submit')" id="item">
+            <button class="btn" id="submit" value="Submit">Submit</button>
+        </form>
+
+        <h3>Tasks</h3>
+
+        <form id="addForm">
+            <ul class="listGroup" id="items">
+
+            </ul>
+        </form>
+    </div>
+</div>
+
+
+
+</body>
+</html>

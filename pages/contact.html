@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/contact.css">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Document</title>
+    <title>Portfolio | Contact</title>
 </head>
 <body>
     <header>
         <div class="headcont">
-            <a id="logo" href="/pages//home.html"><h1 class="logo">Kyra Young</h1></a>
+            <a id="logo" href="/pages/home.html"><h1 class="logo">Kyra Young</h1></a>
             <nav id="navbar">
                 <ul class="navUL">
                     <li><a href="../index.html">Home</a></li>
@@ -21,5 +22,35 @@
             </nav>
         </div>
     </header>
+    <main>
+        <div class="contact">
+            <form id="form" action="" method="post">
+                <div class="formCont">
+                    <div class="formGroup">
+                        <label for="name" class="formLabel">Name:</label>
+                        <input type="text" class="formInput" id="name" name="name" placeholder="Your name">
+                        <div class="error"></div>
+                    </div>
+                    <div class="formGroup">
+                        <label for="phone" class="formLabel">Phone Number:</label>
+                        <input type="text" class="formInput" id="phone" name="phone" placeholder="+1 (xxx) xxx-xxxx">
+                        <div class="error"></div>
+                    </div>
+                    <div class="formGroup">
+                        <label for="email" class="formLabel">Email:</label>
+                        <input type="email" class="formInput" id="email" name="email" placeholder="xxxxx@company.com">
+                        <div class="error"></div>
+                    </div>
+                    <div class="formGroup">
+                        <label for="messageBox" class="formLabel">Message:</label>
+                        <textarea class="formInput" id="messageBox" name="messagebox" placeholder="Leave a short message"></textarea>
+                        <div class="error"></div>
+                    </div>
+                    <button id="submit" type="submit">Send message</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="/js/validate.js"></script>
 </body>
 </html>

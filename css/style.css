@@ -103,3 +103,62 @@ col 4: EAD8B1
     width: 300px;
     border-radius: 100%;
 }
+
+.expBox {
+    background-color: #6A9AB0;
+    text-align: center;
+}
+
+.expBox p {
+    background-color: #6A9AB0;
+}
+
+.skillBox {
+    text-align: center;
+}
+
+.skillBox , .skillBox li {
+    background-color: #6A9AB0;
+}
+
+.skillBox li {
+    color: white;
+}
+
+.projectCont > *, .projectCont ol > li {
+    text-align: center;
+    background: #6A9AB0;
+}
+.projectCont li > a {
+    background-color: #6A9AB0;
+}
+/* Style for the button */
+#snowfallButton {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    position: fixed;
+    top: 50vh;
+    left: 0px;
+    z-index: 10; /* Button above the snowflakes */
+}
+
+#snowfallButton:hover {
+    background-color: #0056b3;
+}
+
+/* Fullscreen canvas for snowflakes */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5; /* Snowflakes are below the button */
+    pointer-events: none; /* Allow clicks to go through the snowflakes */
+}
+
