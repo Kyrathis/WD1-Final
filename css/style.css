@@ -1,10 +1,7 @@
-/* 
-col 1: 001F3F
-col 2: 3A6D8C
-col 3: 6A9AB0
-col 4: EAD8B1
-*/
+/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Quicksand:wght@300..700&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* General styles */
 * {
     background: #EAD8B1;
     box-sizing: border-box;
@@ -12,16 +9,20 @@ col 4: EAD8B1
     padding: 0;
     font-family: 'Quicksand', sans-serif;
 }
-.headcont{
+
+/* Header container */
+.headcont {
     display: flex;
     justify-content: space-between;
     background-color: #001F3F;
-} 
+    padding: 10px;
+}
 
 .headcont .logo, .headcont #navbar {
     background: #001F3F;
     color: white;
 }
+
 #navbar li {
     list-style-type: none;
     float: left;
@@ -29,28 +30,35 @@ col 4: EAD8B1
     margin: 5px;
     height: 25px;
 }
+
 #navbar li a {
     color: white;
 }
+
 #navbar li:hover {
     background: #6A9AB0;
 }
+
 #navbar a:hover {
     background: #6A9AB0;
     border-bottom: 2px solid #6A9AB0;
 }
+
 #navbar ul > * {
     background-color: #001F3F;
     list-style-type: none;
 }
+
 #navbar li > * {
     background-color: #001F3F;
 }
 
+/* Video Landing Container */
 .vidLandCont {
     display: flex;
     justify-content: space-between;
     background: #6A9AB0;
+    padding: 10px;
 }
 
 .introStatement {
@@ -58,15 +66,18 @@ col 4: EAD8B1
     text-align: center;
     background: #6A9AB0;
 }
+
 .introStatement, h3, p {
     background: inherit;
     color: white;
 }
+
 .heroVid {
     width: 90vh;
     height: auto;
 }
 
+/* Image Gallery */
 .imageGallery {
     overflow: auto;
     white-space: nowrap;
@@ -75,64 +86,44 @@ col 4: EAD8B1
     margin: auto;
     border-radius: 5%;
 }
-.footCont
-{
+
+/* Footer Container */
+.footCont {
     background: #001F3F;
     text-align: center;
+    padding: 20px;
 }
 
-.bio , .name{
+/* Bio Container */
+.bio, .name {
     background: #6A9AB0;
     text-align: center;
     color: white; 
 }
+
 .bio .name {
     margin-top: 5%;
 }
 
 .bioCont {
     display: flex;
+    justify-content: center;
+    margin: 20px;
 }
 
 .bioPic {
     background: #6A9AB0;
+    padding: 10px;
 }
 
-.bioPic img{
-
+.bioPic img {
     width: 300px;
     border-radius: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
-.expBox {
-    background-color: #6A9AB0;
-    text-align: center;
-}
-
-.expBox p {
-    background-color: #6A9AB0;
-}
-
-.skillBox {
-    text-align: center;
-}
-
-.skillBox , .skillBox li {
-    background-color: #6A9AB0;
-}
-
-.skillBox li {
-    color: white;
-}
-
-.projectCont > *, .projectCont ol > li {
-    text-align: center;
-    background: #6A9AB0;
-}
-.projectCont li > a {
-    background-color: #6A9AB0;
-}
-/* Style for the button */
+/* Snowfall Button */
 #snowfallButton {
     padding: 10px 20px;
     background-color: #007BFF;
@@ -147,10 +138,6 @@ col 4: EAD8B1
     z-index: 10; /* Button above the snowflakes */
 }
 
-#snowfallButton:hover {
-    background-color: #0056b3;
-}
-
 /* Fullscreen canvas for snowflakes */
 canvas {
     position: fixed;
@@ -162,3 +149,61 @@ canvas {
     pointer-events: none; /* Allow clicks to go through the snowflakes */
 }
 
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+    .headcont {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    #navbar li {
+        display: inline-block;
+        padding: 10px 15px;
+    }
+
+    .heroVid {
+        width: 100%;
+        height: auto;
+    }
+
+    .imageGallery {
+        width: 90%;
+    }
+
+    .bioCont {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bioPic img {
+        width: 70%;
+        max-width: 250px;
+    }
+
+    #snowfallButton {
+        top: 80vh;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* Further adjustments for smaller screens */
+@media (max-width: 480px) {
+    .introStatement {
+        font-size: 14px;
+    }
+
+    .heroVid {
+        width: 100%;
+    }
+
+    .bioPic img {
+        width: 80%;
+    }
+
+    #snowfallButton {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
